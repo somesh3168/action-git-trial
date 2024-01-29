@@ -23,8 +23,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt  # If you have any dependencies
 
-    - name: Copy script to working directory
-      run: cp $GITHUB_WORKSPACE/example.py .
-
     - name: Run Python script
-      run: python example.py
+      run: python example.py  # Replace with your script name
